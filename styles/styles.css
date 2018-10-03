@@ -1,0 +1,298 @@
+:root {
+    --color-red: red;
+    --color-green: green;
+    --color-darkgray: #555;
+    --color-lightgray:#e0e0e0;
+    --color-lightblue:#2c7fc1;
+    --color-darkblue:#021f59;
+    --color-black:#000;
+    --color-yellow:yellow;
+}
+
+/*-----------------------------------TAGS-----------------------------------------------------------*/
+
+html{
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+div{
+    font-family: bhoma;
+}
+
+p,span{
+    font-family: bhoma;
+    direction: rtl;
+}
+
+td,th{
+    direction: rtl;
+}
+
+td{
+    vertical-align: top;
+}
+
+th{
+    max-width: 80px;
+    vertical-align: bottom;
+}
+
+div[class^="col"]{
+    padding: 0;
+}
+
+/*-----------------------------------CLASSES-----------------------------------------------------------*/
+
+.container-fluid{
+    border-radius: 0px;
+}
+
+.pad{
+    padding: 50px;
+    text-align: left;
+}
+
+.top{
+    height: 250px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.row{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.data{
+    border-radius: 100px 0px 0px 100px;
+    background-color: var(--color-lightgray);
+    text-align: right;
+    padding: 15px 30px 15px 15px;
+}
+
+.tabletitle{
+    color: var(--color-lightblue);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.tablekey{
+    padding: 2px 0px 2px 10px;
+    width: 50%;
+    color: var(--color-black);
+    font-weight: bold;
+}
+
+.tablevalue{
+    text-align:right ;
+    padding: 2px 10px 2px 0px;
+    width: 50%;
+    color: var(--color-darkgray);
+}
+
+.tabletext{
+    text-align:center ;
+    padding: 2px 10px 2px 10px;
+    color: var(--color-black);
+    
+}
+
+.tabletextkey{
+    text-align:left ;
+    padding: 2px 10px 2px 10px;
+    color: var(--color-black);
+    
+}
+
+.linebreak{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding: 5px;
+}
+    
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: var(--color-lightblue);
+    border-radius: 50%;
+    float: left;
+}
+    
+.line{
+    position: relative;
+    left: -5px;
+    width: 100% ;
+    height: 5px;
+    background-color: var(--color-lightblue);
+    
+}
+    
+.label{
+    color: var(--color-lightblue);
+    font-size: 1.5em;
+}
+
+.darkdot {
+    height: 10px;
+    width: 10px;
+    background-color: var(--color-darkblue);
+    border-radius: 50%;
+    float: left;
+}
+    
+.darkline{
+    position: relative;
+    left: -5px;
+    width: 100% ;
+    height: 5px;
+    background-color: var(--color-darkblue);
+    
+}
+    
+.darklabel{
+    color: var(--color-darkblue);
+    font-size: 1.5em;
+}
+    
+.left {
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.right {
+        float:right;
+}
+
+.borderbottom{
+    border-bottom-style: solid;
+    border-bottom-color: var(--color-yellow);
+}
+
+.borderright{
+    border-right-style: solid;
+    border-right-color: var(--color-yellow);
+    vertical-align: middle;
+    padding-right: 5px;
+    padding-left: 30px;
+}
+
+.borderleft{
+    border-left-style: solid;
+    border-left-color: var(--color-yellow);
+    vertical-align: middle;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.report{
+    width: 80%;
+    height:100%;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+.logo{
+    width: 100%;
+    height:100%;
+    object-fit: contain
+}
+
+.chart{
+    width: 100%;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.title{
+    font-size: 5em;
+}
+
+.subtitle{
+    font-size: 1.5em;
+}
+
+.fullheight{
+    height: 100%;
+}
+
+.fullwidth{
+    width: 100%;
+}
+
+.horizcenter{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tobottom{
+    margin-top: auto;
+    text-align: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.tocenter{
+    margin: auto;
+    text-align: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.toleft{
+    margin-left: 20px;
+    margin-right: auto;
+    text-align: left;
+}
+
+.toright{
+    margin-right: 20px;
+    margin-left: auto;
+    text-align: right;
+}
+
+.rlmargins{
+        margin-left: 5px;
+        margin-right: 5px;
+}
+
+.txtblue{
+    color: var(--color-lightblue);
+}
+
+.txtred{
+    color: var(--color-red);
+}
+
+.txtgreen{
+    color: var(--color-green);
+}
+
+.txtgray{
+    color:var(--color-darkgray);
+}
+
+@media screen and (min-width: 1200px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@font-face {
+    font-family: bhoma;
+    src: url(../fonts/bhoma.ttf);
+}
