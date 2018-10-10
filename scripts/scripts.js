@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
     google.charts.load('current', {'packages': ['corechart']});
     google.charts.setOnLoadCallback(drawVisualization);
@@ -28,34 +28,62 @@ $(document).ready(function(){
         ]);
 
         var options = {
-            legend: {position: 'bottom'},
+            legend: {
+                position: 'bottom',
+                textStyle: {
+                    fontName: 'bhoma',
+                    fontSize: '24'
+                }
+            },
             vAxis: {
+                textStyle: {
+                    fontName: 'bhoma',
+                    fontSize: '24'
+                },
                 viewWindow: {
                     min: 600,
                     max: 1400
                 }
             },
             hAxis: {
+                textStyle: {
+                    fontName: 'bhoma',
+                    fontSize: '24'
+                },
                 gridlines: {
                     color: 'transparent'
                 },
                 ticks: [{v: 0, f: ''}, {v: 2, f: 'تیر'}, {v: 4, f: 'مرداد'}, {v: 6, f: 'شهریور'}, {
                     v: 8,
                     f: 'مهر'
-                }, {v: 10, f: 'آبان'}, {v: 12, f: 'آذر'}, {v: 14, f: ''}],
+                }, {v: 10, f: 'آبان'}, {v: 12, f: 'آذر'}, {v: 14, f: ''}]
             },
             seriesType: 'line',
+            colors: ['#febf08', '#c0dfa7', '#395a7d', '#375121', '#86b25f'],
             series: {
                 0: {pointSize: 20, pointShape: 'circle'},
                 1: {type: 'bars'}
             },
             bar: {groupWidth: '100%'},
-            colors: ['#febf08', '#c0dfa7', '#395a7d', '#375121', '#86b25f']
+            'tooltip':
+                {
+                    trigger: 'none'
+                }
+            ,
+            'chartArea':
+                {
+                    'width':
+                        '90%', 'height':
+                        '80%', top:
+                        20
+                }
+            ,
+
 
         };
-
 
         chart.draw(data, options);
     }
 
-});
+})
+;

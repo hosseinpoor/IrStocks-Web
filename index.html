@@ -4,121 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
     <script src="scripts/jquery.min.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/scripts.js"></script>
     <script type="text/javascript" src="scripts/loader.js"></script>
     <title>IrStocks</title>
 </head>
 
-<body>
+<body class="tiledBackground">
 
-<div class="container-fluid top">
+<div class="top">
     <div class="row">
-        <div class="col-xs-3">
+        <div class="col30 allignright">
             <img src="img/2.jpg" alt="گزارش" class="report"/>
         </div>
-        <div class="col-xs-6 tocenter fullheight">
+        <div class="col40 tocenter fullheight">
             <div>
                 <p class="title">نمایی از ذوب آهن اصفهان</p>
                 <p class="subtitle">(ذوب)</p>
             </div>
         </div>
-        <div class="col-xs-3">
+        <div class="col30">
             <img src="img/1.jpg" alt="ره آورد" class="logo"/>
         </div>
     </div>
 </div>
 
-<div class="container-fluid">
+<div>
     <div class="row">
-        <div class="col-xs-8">
+        <div class="col63">
             <div class="pad">
-                <div class="linebreak">
-                    <div class="left">
-                        <div class="dot"></div>
-                        <div class="line"></div>
+                <div class="tblcontainer">
+                    <div class="linebreak">
+                        <div class="left">
+                            <div class="dot"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="right">
+                            <div class="label">بنیادی</div>
+                        </div>
                     </div>
-                    <div class="right">
-                        <div class="label">بنیادی</div>
-                    </div>
+                    <table class="margintop">
+
+                        <thead>
+                        <tr>
+                            <th class="tabletext borderbottom txtgray">امتیاز</th>
+                            <th class="tabletext borderbottom txtgray">قیمت بنیادی</th>
+                            <th class="tabletext borderbottom txtgray">صنعت</th>
+                            <th class="tabletext borderbottom txtgray">مقدار</th>
+                            <th class="tabletext"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="tabletext txtgray">۰/۲</td>
+                            <td class="tabletext">۶۸</td>
+                            <td class="tabletext">۱۳/۵۲</td>
+                            <td class="tabletext">۱۹۳</td>
+                            <td class="tabletextkey txtgray">قیمت به درآمد (P/E)</td>
+                        </tr>
+                        <tr>
+                            <td class="tabletext txtgray">۱</td>
+                            <td class="tabletext">۳۸۹</td>
+                            <td class="tabletext">۱/۱۴</td>
+                            <td class="tabletext">۰/۷۲</td>
+                            <td class="tabletextkey txtgray">قیمت به ارزش دفتری (P/B)</td>
+                        </tr>
+                        <tr>
+                            <td class="tabletext txtgray">۳/۱</td>
+                            <td class="tabletext">۱۲۹۱</td>
+                            <td class="tabletext">۲/۳۲</td>
+                            <td class="tabletext">۲/۸۴</td>
+                            <td class="tabletextkey txtgray">قیمت به فروش (P/S)</td>
+                        </tr>
+                        <tr>
+                            <td class="tabletext txtgray">۰</td>
+                            <td class="tabletext"></td>
+                            <td class="tabletext">۲/۱۵</td>
+                            <td class="tabletext">۱۸/۴۴-</td>
+                            <td class="tabletextkey txtgray">قیمت به درآمد به رشد (PEG)</td>
+                        </tr>
+                        <tr>
+                            <td class="tabletext txtgray">۴/۶</td>
+                            <td class="tabletext">۴۷۱</td>
+                            <td class="tabletext">۲۰/۴۳</td>
+                            <td class="tabletext">۱۰۳</td>
+                            <td class="tabletextkey txtgray">ارزش تجاری به سود عملیاتی (EV/EBIT)</td>
+                        </tr>
+                        <tr>
+                            <td class="tabletext txtgray">۱/۳</td>
+                            <td class="tabletext">۲۱۴۶</td>
+                            <td class="tabletext">۳/۸۵</td>
+                            <td class="tabletext">۴/۲۶</td>
+                            <td class="tabletextkey txtgray">ارزش تجاری به فروش (EV/Sales)</td>
+                        </tr>
+                        <tr>
+                            <td class="tabletext borderbottom txtgray">۱/۹</td>
+                            <td class="tabletext borderbottom">۶۴۹</td>
+                            <td class="tabletext borderbottom"></td>
+                            <td class="tabletext borderbottom"></td>
+                            <td class="tabletextkey txtgray">تنزیل جریانات نقدی با شبیه سازی مونت کارلو (DCF-MC)</td>
+                        </tr>
+                        <tr>
+                            <td class="tabletext txtgray"></td>
+                            <td class="tabletext">۶۷۹</td>
+                            <td class="tabletext">ارزش بنیادی</td>
+                            <td class="tabletext"></td>
+                            <td class="tabletextkey txtgray"></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
                 </div>
 
-                <table class="fullwidth">
-
-                    <thead>
-                    <tr>
-                        <th class="tabletext borderbottom txtgray">امتیاز</th>
-                        <th class="tabletext borderbottom txtgray">قیمت بنیادی</th>
-                        <th class="tabletext borderbottom txtgray">صنعت</th>
-                        <th class="tabletext borderbottom txtgray">مقدار</th>
-                        <th class="tabletext"></th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td class="tabletext txtgray">۰/۲</td>
-                        <td class="tabletext">۶۸</td>
-                        <td class="tabletext">۱۳/۵۲</td>
-                        <td class="tabletext">۱۹۳</td>
-                        <td class="tabletextkey txtgray">قیمت به درآمد (P/E)</td>
-                    </tr>
-                    <tr>
-                        <td class="tabletext txtgray">۱</td>
-                        <td class="tabletext">۳۸۹</td>
-                        <td class="tabletext">۱/۱۴</td>
-                        <td class="tabletext">۰/۷۲</td>
-                        <td class="tabletextkey txtgray">قیمت به ارزش دفتری (P/B)</td>
-                    </tr>
-                    <tr>
-                        <td class="tabletext txtgray">۳/۱</td>
-                        <td class="tabletext">۱۲۹۱</td>
-                        <td class="tabletext">۲/۳۲</td>
-                        <td class="tabletext">۲/۸۴</td>
-                        <td class="tabletextkey txtgray">قیمت به فروش (P/S)</td>
-                    </tr>
-                    <tr>
-                        <td class="tabletext txtgray">۰</td>
-                        <td class="tabletext"></td>
-                        <td class="tabletext">۲/۱۵</td>
-                        <td class="tabletext">۱۸/۴۴-</td>
-                        <td class="tabletextkey txtgray">قیمت به درآمد به رشد (PEG)</td>
-                    </tr>
-                    <tr>
-                        <td class="tabletext txtgray">۴/۶</td>
-                        <td class="tabletext">۴۷۱</td>
-                        <td class="tabletext">۲۰/۴۳</td>
-                        <td class="tabletext">۱۰۳</td>
-                        <td class="tabletextkey txtgray">ارزش تجاری به سود عملیاتی (EV/EBIT)</td>
-                    </tr>
-                    <tr>
-                        <td class="tabletext txtgray">۱/۳</td>
-                        <td class="tabletext">۲۱۴۶</td>
-                        <td class="tabletext">۳/۸۵</td>
-                        <td class="tabletext">۴/۲۶</td>
-                        <td class="tabletextkey txtgray">ارزش تجاری به فروش (EV/Sales)</td>
-                    </tr>
-                    <tr>
-                        <td class="tabletext borderbottom txtgray">۱/۹</td>
-                        <td class="tabletext borderbottom">۶۴۹</td>
-                        <td class="tabletext borderbottom"></td>
-                        <td class="tabletext borderbottom"></td>
-                        <td class="tabletextkey txtgray">تنزیل جریانات نقدی با شبیه سازی مونت کارلو (DCF-MC)</td>
-                    </tr>
-                    <tr>
-                        <td class="tabletext txtgray"></td>
-                        <td class="tabletext">۶۷۹</td>
-                        <td class="tabletext">ارزش بنیادی</td>
-                        <td class="tabletext"></td>
-                        <td class="tabletextkey txtgray"></td>
-                    </tr>
-
-                    </tbody>
-                </table>
-
-
+                <div class="tblcontainer">
                 <div class="linebreak">
                     <div class="left">
                         <div class="darkdot"></div>
@@ -128,10 +127,9 @@
                         <div class="darklabel">تکنیکال</div>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-xs-6">
-                        <table class="horizcenter">
+                    <div class="row margintop">
+                        <div class="col50">
+                            <table class="fullwidth">
 
                             <thead>
                             <tr>
@@ -185,9 +183,9 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="col-xs-6">
+                        <div class="col50">
 
-                        <table class="horizcenter">
+                            <table class="fullwidth">
 
                             <thead>
                             <tr>
@@ -242,110 +240,113 @@
                         </table>
                     </div>
                 </div>
+                </div>
 
                 <div class="chart" id="chart_div"></div>
 
                 <div class="row">
-                    <div class="col-xs-6">
+                    <div class="col50">
                         <table class="toright">
                             <tr>
-                                <td class=""><span class="rlmargins tabletitle">اول : </span> <span
-                                        class="tabletxt">821</span></td>
-                                <td rowspan="2" class=" borderleft tabletitle">حمایت کلاسیک</td>
+                                <td class=""><span class="rlmargins tabletitlebig">اول : </span> <span
+                                        class="tabletitlebig txtblack">821</span></td>
+                                <td rowspan="2" class=" borderleft tabletitlebig">حمایت کلاسیک</td>
                             </tr>
                             <tr>
-                                <td class=""><span class="rlmargins tabletitle">دوم : </span> <span
-                                        class="tabletxt">682</span></td>
+                                <td class=""><span class="rlmargins tabletitlebig">دوم : </span> <span
+                                        class="tabletitlebig txtblack">682</span></td>
                             </tr>
                         </table>
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col50">
                         <table class="toleft">
                             <tr>
-                                <td rowspan="2" class="borderright tabletitle">مقاومت کلاسیک</td>
-                                <td><span>1041</span> <span class="rlmargins tabletitle"> : اول</span></td>
+                                <td rowspan="2" class="borderright tabletitlebig">مقاومت کلاسیک</td>
+                                <td><span class="tabletitlebig txtblack">1041</span> <span
+                                        class="rlmargins tabletitlebig"> : اول</span></td>
                             </tr>
                             <tr>
-                                <td><span>1122</span> <span class="rlmargins tabletitle"> : دوم</span></td>
+                                <td><span class="tabletitlebig txtblack">1122</span> <span
+                                        class="rlmargins tabletitlebig"> : دوم</span></td>
                             </tr>
                         </table>
                     </div>
                 </div>
 
-                <div class="linebreak">
-                    <div class="left">
-                        <div class="dot"></div>
-                        <div class="line"></div>
+                <div class="tblcontainer">
+                    <div class="linebreak">
+                        <div class="left">
+                            <div class="dot"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="right">
+                            <div class="label">سابقه پیش بینی و پرداخت سود</div>
+                        </div>
                     </div>
-                    <div class="right">
-                        <div class="label">سابقه پیش بینی و پرداخت سود</div>
-                    </div>
+                    <table class="fullwidth margintop">
+
+                        <thead>
+                        <tr>
+                            <td class="tabletext borderbottom txtgray">رشد DPS</td>
+                            <td class="tabletext borderbottom txtgray">رشد EPS</td>
+                            <td class="tabletext borderbottom txtgray">درصد توضیع</td>
+                            <td class="tabletext borderbottom txtgray">DPS</td>
+                            <td class="tabletext borderbottom txtgray">درصد انحراف</td>
+                            <td class="tabletext borderbottom txtgray">مجمع</td>
+                            <td class="tabletext borderbottom txtgray">اولین پیش بینی</td>
+                            <td class="tabletext"></td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="tabletext"></td>
+                            <td class="tabletext"></td>
+                            <td class="tabletext"></td>
+                            <td class="tabletext"></td>
+                            <td class="tabletext"></td>
+                            <td class="tabletext"></td>
+                            <td class="tabletext txtred">34-</td>
+                            <td class="tabletext">96</td>
+                        </tr>
+                        <tr>
+                            <td class="tabletext">-</td>
+                            <td class="tabletext txtgreen">%84</td>
+                            <td class="tabletext">-</td>
+                            <td class="tabletext">0</td>
+                            <td class="tabletext txtgreen">%61</td>
+                            <td class="tabletext txtred">224-</td>
+                            <td class="tabletext txtred">582-</td>
+                            <td class="tabletext">95</td>
+                        </tr>
+                        <tr>
+                            <td class="tabletext">-</td>
+                            <td class="tabletext txtred">%972-</td>
+                            <td class="tabletext">-</td>
+                            <td class="tabletext">0</td>
+                            <td class="tabletext txtred">%1536-</td>
+                            <td class="tabletext txtred">1422-</td>
+                            <td class="tabletext">86</td>
+                            <td class="tabletext">94</td>
+                        </tr>
+                        <tr>
+                            <td class="tabletext">-</td>
+                            <td class="tabletext txtred">%67-</td>
+                            <td class="tabletext">-</td>
+                            <td class="tabletext">0</td>
+                            <td class="tabletext txtred">%67-</td>
+                            <td class="tabletext">163</td>
+                            <td class="tabletext">503</td>
+                            <td class="tabletext">93</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
 
-                <table class="fullwidth">
-
-                    <thead>
-                    <tr>
-                        <td class="tabletext borderbottom txtgray">رشد DPS</td>
-                        <td class="tabletext borderbottom txtgray">رشد EPS</td>
-                        <td class="tabletext borderbottom txtgray">درصد توضیع</td>
-                        <td class="tabletext borderbottom txtgray">DPS</td>
-                        <td class="tabletext borderbottom txtgray">درصد انحراف</td>
-                        <td class="tabletext borderbottom txtgray">مجمع</td>
-                        <td class="tabletext borderbottom txtgray">اولین پیش بینی</td>
-                        <td class="tabletext"></td>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td class="tabletext"></td>
-                        <td class="tabletext"></td>
-                        <td class="tabletext"></td>
-                        <td class="tabletext"></td>
-                        <td class="tabletext"></td>
-                        <td class="tabletext"></td>
-                        <td class="tabletext txtred">34-</td>
-                        <td class="tabletext">96</td>
-                    </tr>
-                    <tr>
-                        <td class="tabletext">-</td>
-                        <td class="tabletext txtgreen">%84</td>
-                        <td class="tabletext">-</td>
-                        <td class="tabletext">0</td>
-                        <td class="tabletext txtgreen">%61</td>
-                        <td class="tabletext txtred">224-</td>
-                        <td class="tabletext txtred">582-</td>
-                        <td class="tabletext">95</td>
-                    </tr>
-                    <tr>
-                        <td class="tabletext">-</td>
-                        <td class="tabletext txtred">%972-</td>
-                        <td class="tabletext">-</td>
-                        <td class="tabletext">0</td>
-                        <td class="tabletext txtred">%1536-</td>
-                        <td class="tabletext txtred">1422-</td>
-                        <td class="tabletext">86</td>
-                        <td class="tabletext">94</td>
-                    </tr>
-                    <tr>
-                        <td class="tabletext">-</td>
-                        <td class="tabletext txtred">%67-</td>
-                        <td class="tabletext">-</td>
-                        <td class="tabletext">0</td>
-                        <td class="tabletext txtred">%67-</td>
-                        <td class="tabletext">163</td>
-                        <td class="tabletext">503</td>
-                        <td class="tabletext">93</td>
-                    </tr>
-                    </tbody>
-                </table>
-
-                <img src="img/4.jpg" alt="logo"/>
-
+                <img src="img/4.jpg" alt="logo" class="bottomlogo"/>
 
             </div>
         </div>
-        <div class="col-xs-4">
+        <div class="col37">
             <div class="data">
                 <p class="tabletitle">نمای بازار</p>
                 <table class="fullwidth">
@@ -426,167 +427,170 @@
                 </table>
             </div>
 
-            <div class="linebreak">
-                <div class="left">
-                    <div class="dot"></div>
-                    <div class="line"></div>
+            <div class="tblcontainer">
+                <div class="linebreak">
+                    <div class="left">
+                        <div class="dot"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="right">
+                        <div class="label">نسبت های مالی</div>
+                    </div>
                 </div>
-                <div class="right">
-                    <div class="label">نسبت های مالی</div>
-                </div>
+                <table class="fullwidth">
+
+                    <thead>
+                    <tr>
+                        <th class="tabletext"></th>
+                        <th class="tabletext borderbottom">صنعت</th>
+                        <th class="tabletext borderbottom">مقدار</th>
+                        <th class="tabletext"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="tabletext txtred">٪۱۳۱-</td>
+                        <td class="tabletext">۳/۳</td>
+                        <td class="tabletext">۱۰/۵-</td>
+                        <td class="tabletext toleft">بازدهی سرمایه ROE</td>
+                    </tr>
+                    <tr>
+                        <td class="tabletext txtred">٪۱۸۲-</td>
+                        <td class="tabletext">۱/۱</td>
+                        <td class="tabletext">۱/۴-</td>
+                        <td class="tabletextkey">بازده دارایی ها ROA</td>
+                    </tr>
+                    <tr>
+                        <td class="tabletext txtred">٪۱۲۹-</td>
+                        <td class="tabletext">۱/۹</td>
+                        <td class="tabletext">۶/۴-</td>
+                        <td class="tabletextkey">حاشیه سود خالص</td>
+                    </tr>
+                    <tr>
+                        <td class="tabletext txtred">٪۳۳۷-</td>
+                        <td class="tabletext">۱۸/۱۶</td>
+                        <td class="tabletext">۴/۱۴</td>
+                        <td class="tabletextkey">حاشیه سود عملیاتی</td>
+                    </tr>
+                    <tr>
+                        <td class="tabletext txtred">٪۵۱-</td>
+                        <td class="tabletext">۰/۳۳</td>
+                        <td class="tabletext">۰/۲۲</td>
+                        <td class="tabletextkey">گردش مجموع دارایی ها</td>
+                    </tr>
+                    <tr>
+                        <td class="tabletext txtred">٪۲۸+</td>
+                        <td class="tabletext">۰/۶۲</td>
+                        <td class="tabletext">۰/۸۷</td>
+                        <td class="tabletextkey">نسبت بدهی</td>
+                    </tr>
+                    <tr>
+                        <td class="tabletext txtred">٪۵۶-</td>
+                        <td class="tabletext">۰/۵۰</td>
+                        <td class="tabletext">۰/۳۲</td>
+                        <td class="tabletextkey">نسبت دارایی های جاری</td>
+                    </tr>
+                    <tr>
+                        <td class="tabletext txtred">٪۱۶۴-</td>
+                        <td class="tabletext">۰/۰۹</td>
+                        <td class="tabletext">۰/۰۳</td>
+                        <td class="tabletextkey">نسبت نقدینگی</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
 
-            <table>
-
-                <thead>
-                <tr>
-                    <th class="tabletext"></th>
-                    <th class="tabletext borderbottom">صنعت</th>
-                    <th class="tabletext borderbottom">مقدار</th>
-                    <th class="tabletext"></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td class="tabletext txtred">٪۱۳۱-</td>
-                    <td class="tabletext">۳/۳</td>
-                    <td class="tabletext">۱۰/۵-</td>
-                    <td class="tabletext toleft">بازدهی سرمایه ROE</td>
-                </tr>
-                <tr>
-                    <td class="tabletext txtred">٪۱۸۲-</td>
-                    <td class="tabletext">۱/۱</td>
-                    <td class="tabletext">۱/۴-</td>
-                    <td class="tabletext toleft">بازده دارایی ها ROA</td>
-                </tr>
-                <tr>
-                    <td class="tabletext txtred">٪۱۲۹-</td>
-                    <td class="tabletext">۱/۹</td>
-                    <td class="tabletext">۶/۴-</td>
-                    <td class="tabletext toleft">حاشیه سود خالص</td>
-                </tr>
-                <tr>
-                    <td class="tabletext txtred">٪۳۳۷-</td>
-                    <td class="tabletext">۱۸/۱۶</td>
-                    <td class="tabletext">۴/۱۴</td>
-                    <td class="tabletext toleft">حاشیه سود عملیاتی</td>
-                </tr>
-                <tr>
-                    <td class="tabletext txtred">٪۵۱-</td>
-                    <td class="tabletext">۰/۳۳</td>
-                    <td class="tabletext">۰/۲۲</td>
-                    <td class="tabletext toleft">گردش مجموع دارایی ها</td>
-                </tr>
-                <tr>
-                    <td class="tabletext txtred">٪۲۸+</td>
-                    <td class="tabletext">۰/۶۲</td>
-                    <td class="tabletext">۰/۸۷</td>
-                    <td class="tabletext toleft">نسبت بدهی</td>
-                </tr>
-                <tr>
-                    <td class="tabletext txtred">٪۵۶-</td>
-                    <td class="tabletext">۰/۵۰</td>
-                    <td class="tabletext">۰/۳۲</td>
-                    <td class="tabletext toleft">نسبت دارایی های جاری</td>
-                </tr>
-                <tr>
-                    <td class="tabletext txtred">٪۱۶۴-</td>
-                    <td class="tabletext">۰/۰۹</td>
-                    <td class="tabletext">۰/۰۳</td>
-                    <td class="tabletext toleft">نسبت نقدینگی</td>
-                </tr>
-                </tbody>
-            </table>
-
-            <div class="linebreak">
-                <div class="left">
-                    <div class="dot"></div>
-                    <div class="line"></div>
+            <div class="tblcontainer margintop">
+                <div class="linebreak">
+                    <div class="left">
+                        <div class="dot"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="right">
+                        <div class="label">نسبت های رشد</div>
+                    </div>
                 </div>
-                <div class="right">
-                    <div class="label">نسبت های رشد</div>
-                </div>
+                <table class="fullwidth">
+
+                    <thead>
+                    <tr>
+                        <th class="tabletext borderbottom">۵ سال</th>
+                        <th class="tabletext borderbottom">۳ سال</th>
+                        <th class="tabletext borderbottom">سال</th>
+                        <th class="tabletext"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="tabletext txtgreen">٪۴۱</td>
+                        <td class="tabletext txtred">۱۵٪-</td>
+                        <td class="tabletext txtgreen">۰/۱۶</td>
+                        <td class="tabletextkey">درامد</td>
+                    </tr>
+                    <tr>
+                        <td class="tabletext txtred">٪۱۹۵-</td>
+                        <td class="tabletext txtred">٪۱۹۳-</td>
+                        <td class="tabletext txtgreen">۰/۶۴</td>
+                        <td class="tabletextkey">سود عملیاتی</td>
+                    </tr>
+                    <tr>
+                        <td class="tabletext txtred">٪۲۸۰-</td>
+                        <td class="tabletext txtred">٪۸۸۶-</td>
+                        <td class="tabletext txtgreen">۰/۳۳</td>
+                        <td class="tabletextkey">سود خالص</td>
+                    </tr>
+                    <tr>
+                        <td class="tabletext txtgreen">٪۲۰۲</td>
+                        <td class="tabletext txtgreen">٪۶۱</td>
+                        <td class="tabletext txtgreen">۰/۸</td>
+                        <td class="tabletextkey">دارایی ثابت</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
 
-            <table>
-
-                <thead>
-                <tr>
-                    <th class="tabletext borderbottom">۵ سال</th>
-                    <th class="tabletext borderbottom">۳ سال</th>
-                    <th class="tabletext borderbottom">سال</th>
-                    <th class="tabletext"></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td class="tabletext txtgreen">٪۴۱</td>
-                    <td class="tabletext txtred">۱۵٪-</td>
-                    <td class="tabletext txtgreen">۰/۱۶</td>
-                    <td class="tabletext toleft">درامد</td>
-                </tr>
-                <tr>
-                    <td class="tabletext txtred">٪۱۹۵-</td>
-                    <td class="tabletext txtred">٪۱۹۳-</td>
-                    <td class="tabletext txtgreen">۰/۶۴</td>
-                    <td class="tabletext toleft">سود عملیاتی</td>
-                </tr>
-                <tr>
-                    <td class="tabletext txtred">٪۲۸۰-</td>
-                    <td class="tabletext txtred">٪۸۸۶-</td>
-                    <td class="tabletext txtgreen">۰/۳۳</td>
-                    <td class="tabletext toleft">سود خالص</td>
-                </tr>
-                <tr>
-                    <td class="tabletext txtgreen">٪۲۰۲</td>
-                    <td class="tabletext txtgreen">٪۶۱</td>
-                    <td class="tabletext txtgreen">۰/۸</td>
-                    <td class="tabletext toleft">دارایی ثابت</td>
-                </tr>
-                </tbody>
-            </table>
-
-            <div class="linebreak">
-                <div class="left">
-                    <div class="dot"></div>
-                    <div class="line"></div>
+            <div class="tblcontainer">
+                <div class="linebreak">
+                    <div class="left">
+                        <div class="dot"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="right">
+                        <div class="label">پرفروش ترین محصول ها</div>
+                    </div>
                 </div>
-                <div class="right">
-                    <div class="label">پرفروش ترین محصول ها</div>
-                </div>
+                <table>
+
+                    <thead>
+                    <tr>
+                        <th class="tabletext borderbottom txtgray">% پوشش در زمان مجمع</th>
+                        <th class="tabletext borderbottom txtgray">% پوشش</th>
+                        <th class="tabletext borderbottom txtgray">سهم از فروش</th>
+                        <th class="tabletext"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="tabletext txtred">٪۷۶</td>
+                        <td class="tabletext">٪۵۰/۸</td>
+                        <td class="tabletext">۰/۳۲</td>
+                        <td class="tabletext toleft">تیرآهن</td>
+                    </tr>
+                    <tr>
+                        <td class="tabletext"></td>
+                        <td class="tabletext">پیش بینی نشده</td>
+                        <td class="tabletext">۰/۳۲</td>
+                        <td class="tabletext toleft">شمس</td>
+                    </tr>
+                    <tr>
+                        <td class="tabletext txtred">٪۱۴-</td>
+                        <td class="tabletext">٪۵۳/۹</td>
+                        <td class="tabletext">۰/۲۷</td>
+                        <td class="tabletext toleft">میلگرد</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
-
-            <table>
-
-                <thead>
-                <tr>
-                    <th class="tabletext borderbottom txtgray">% پوشش در زمان مجمع</th>
-                    <th class="tabletext borderbottom txtgray">% پوشش</th>
-                    <th class="tabletext borderbottom txtgray">سهم از فروش</th>
-                    <th class="tabletext"></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td class="tabletext txtred">٪۷۶</td>
-                    <td class="tabletext">٪۵۰/۸</td>
-                    <td class="tabletext">۰/۳۲</td>
-                    <td class="tabletext toleft">تیرآهن</td>
-                </tr>
-                <tr>
-                    <td class="tabletext"></td>
-                    <td class="tabletext">پیش بینی نشده</td>
-                    <td class="tabletext">۰/۳۲</td>
-                    <td class="tabletext toleft">شمس</td>
-                </tr>
-                <tr>
-                    <td class="tabletext txtred">٪۱۴-</td>
-                    <td class="tabletext">٪۵۳/۹</td>
-                    <td class="tabletext">۰/۲۷</td>
-                    <td class="tabletext toleft">میلگرد</td>
-                </tr>
-                </tbody>
-            </table>
 
         </div>
     </div>

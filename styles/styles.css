@@ -16,6 +16,23 @@ html{
     padding: 0px;
 }
 
+/*html {*/
+/*position: relative;*/
+/*}*/
+
+/*html::after {*/
+/*content: "";*/
+/*background: url("../img/back.jpeg");*/
+/*background-size: 100%;*/
+/*opacity: 0.5;*/
+/*top: 0;*/
+/*left: 0;*/
+/*bottom: 0;*/
+/*right: 0;*/
+/*position: absolute;*/
+/*z-index: +1;*/
+/*}*/
+
 div{
     font-family: bhoma;
 }
@@ -34,7 +51,7 @@ td{
 }
 
 th{
-    max-width: 80px;
+    max-width: 100px;
     vertical-align: bottom;
 }
 
@@ -44,65 +61,81 @@ div[class^="col"]{
 
 /*-----------------------------------CLASSES-----------------------------------------------------------*/
 
-.container-fluid{
-    border-radius: 0px;
-}
-
 .pad{
-    padding: 50px;
+    padding: 60px;
     text-align: left;
 }
 
 .top{
-    height: 250px;
-    margin-top: 24px;
-    margin-bottom: 8px;
+    height: 350px;
 }
 
 .row{
     text-align: center;
     vertical-align: middle;
+    overflow: hidden;;
 }
 
 .data{
-    border-radius: 100px 0px 0px 100px;
+    border-radius: 350px 0px 0px 350px;
     background-color: var(--color-lightgray);
     text-align: right;
-    padding: 15px 30px 15px 15px;
+    margin: 0px 0px 30px 0px;
+    padding: 0px 30px 15px 30px;
+}
+
+.tblcontainer {
+    margin-top: 20px;
+    padding: 0px 60px 0px 30px;
 }
 
 .tabletitle{
     color: var(--color-lightblue);
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.7em;
+    margin-right: 25px;
+    padding: 0;
+    height: 1em;
 }
 
 .tablekey{
     padding: 2px 0px 2px 10px;
-    width: 50%;
+    width: 47%;
     color: var(--color-black);
     font-weight: bold;
+    font-size: 1.5em;
 }
 
 .tablevalue{
     text-align:right ;
     padding: 2px 10px 2px 0px;
-    width: 50%;
+    width: 53%;
     color: var(--color-darkgray);
+    font-size: 1.5em;
 }
 
 .tabletext{
     text-align:center ;
     padding: 2px 10px 2px 10px;
     color: var(--color-black);
-    
+    font-size: 1.25em;
+    line-height: 1.7em;
 }
 
 .tabletextkey{
     text-align:left ;
     padding: 2px 10px 2px 10px;
     color: var(--color-black);
-    
+    font-size: 1.25em;
+    line-height: 1.7em;
+    width: 45%;
+}
+
+.tabletitlebig {
+    color: var(--color-lightblue);
+    font-weight: bold;
+    font-size: 2em;
+    padding: 0;
 }
 
 .linebreak{
@@ -110,6 +143,7 @@ div[class^="col"]{
     justify-content:center;
     align-items:center;
     padding: 5px;
+    height: 5px;
 }
     
 .dot {
@@ -131,7 +165,8 @@ div[class^="col"]{
     
 .label{
     color: var(--color-lightblue);
-    font-size: 1.5em;
+    font-size: 2em;
+    margin-left: 20px;
 }
 
 .darkdot {
@@ -148,16 +183,16 @@ div[class^="col"]{
     width: 100% ;
     height: 5px;
     background-color: var(--color-darkblue);
-    
 }
     
 .darklabel{
     color: var(--color-darkblue);
-    font-size: 1.5em;
+    font-size: 2em;
+    margin-left: 20px;
 }
     
 .left {
-    width: 100%;
+    flex-grow: 1;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -176,7 +211,7 @@ div[class^="col"]{
     border-right-color: var(--color-yellow);
     vertical-align: middle;
     padding-right: 5px;
-    padding-left: 30px;
+    padding-left: 35px;
 }
 
 .borderleft{
@@ -184,7 +219,7 @@ div[class^="col"]{
     border-left-color: var(--color-yellow);
     vertical-align: middle;
     padding-left: 5px;
-    padding-right: 5px;
+    padding-right: 35px;
 }
 
 .report{
@@ -195,23 +230,89 @@ div[class^="col"]{
 }
 
 .logo{
-    width: 100%;
+    width: 65%;
     height:100%;
-    object-fit: contain
+    object-fit: contain;
+    margin-top: 14px;
+    margin-left: 28px;
 }
 
 .chart{
+    padding-left: 75px;
     width: 100%;
-    height: 500px;
-    object-fit: contain;
+    height: 570px;
+    display: inline-block;
+    position: relative;
 }
 
 .title{
-    font-size: 5em;
+    margin: 0;
+    font-size: 4.5em;
+    margin-top: 24px;
 }
 
 .subtitle{
-    font-size: 1.5em;
+    margin: 0;
+    font-size: 2em;
+}
+
+.bottomlogo {
+    width: 33%;
+    margin-left: 33px;
+}
+
+.col33 {
+    text-align: center;
+    float: left;
+    width: 33%;
+}
+
+.col67 {
+    text-align: center;
+    float: left;
+    width: 67%;
+}
+
+.col50 {
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+
+.col25 {
+    text-align: center;
+    float: left;
+    width: 25%;
+}
+
+.col40 {
+    text-align: center;
+    float: left;
+    width: 40%;
+}
+
+.col60 {
+    text-align: center;
+    float: left;
+    width: 60%;
+}
+
+.col30 {
+    text-align: center;
+    float: left;
+    width: 30%;
+}
+
+.col63 {
+    text-align: center;
+    float: left;
+    width: 63%;
+}
+
+.col37 {
+    text-align: center;
+    float: left;
+    width: 37%;
 }
 
 .fullheight{
@@ -249,6 +350,10 @@ div[class^="col"]{
     text-align: left;
 }
 
+.allignright {
+    text-align: right;
+}
+
 .toright{
     margin-right: 20px;
     margin-left: auto;
@@ -258,6 +363,14 @@ div[class^="col"]{
 .rlmargins{
         margin-left: 5px;
         margin-right: 5px;
+}
+
+.margintop {
+    margin-top: 25px;
+}
+
+.txtblack {
+    color: var(--color-black);
 }
 
 .txtblue{
