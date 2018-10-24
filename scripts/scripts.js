@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    google.charts.load('current', {'packages': ['corechart']});
+    google.charts.load("visualization", "1", {'packages': ['corechart']});
     google.charts.setOnLoadCallback(drawVisualization);
 
     function drawVisualization() {
@@ -72,10 +72,9 @@ $(document).ready(function () {
             ,
             'chartArea':
                 {
-                    'width':
-                        '90%', 'height':
-                        '80%', top:
-                        20
+                    'width': '80%',
+                    'height': '80%',
+                    top: 20
                 }
             ,
 
@@ -83,7 +82,80 @@ $(document).ready(function () {
         };
 
         chart.draw(data, options);
+
+        function resize() {
+            // change dimensions if necessary
+            chart.draw(data, options);
+        }
+
+        if (window.addEventListener) {
+            window.addEventListener('resize', resize);
+        }
+        else {
+            window.attachEvent('onresize', resize);
+        }
     }
+
+    function resizing() {
+        if ($(window).width() > 1583) {
+            document.getElementById("logocontainerID").style.display = "block";
+            document.getElementById("symbolcontainerID").className = "col40 floatright tocenter fullheight"
+            document.getElementById("reportcontainerID").className = "col30 floatright";
+            document.getElementById("mainID").className = "col63 floatright";
+            document.getElementById("sideID").className = "col37 floatright";
+            document.getElementById("tbl1ID").className = "col50";
+            document.getElementById("tbl2ID").className = "col50";
+        }
+        if ($(window).width() < 1584) {
+            document.getElementById("logocontainerID").style.display = "block";
+            document.getElementById("symbolcontainerID").className = "col40 floatright tocenter fullheight"
+            document.getElementById("reportcontainerID").className = "col30 floatright";
+            document.getElementById("mainID").className = "col63 floatright";
+            document.getElementById("sideID").className = "col37 floatright";
+            document.getElementById("tbl1ID").className = "col50";
+            document.getElementById("tbl2ID").className = "col50";
+        }
+        if ($(window).width() < 1184) {
+            document.getElementById("logocontainerID").style.display = "block";
+            document.getElementById("symbolcontainerID").className = "col40 floatright tocenter fullheight"
+            document.getElementById("reportcontainerID").className = "col30 floatright";
+            document.getElementById("mainID").className = "col63 floatright";
+            document.getElementById("sideID").className = "col37 floatright";
+            document.getElementById("tbl1ID").className = "col50";
+            document.getElementById("tbl2ID").className = "col50";
+        }
+        if ($(window).width() < 976) {
+            document.getElementById("logocontainerID").style.display = "none";
+            document.getElementById("symbolcontainerID").className = "col40 floatright tocenter fullheight"
+            document.getElementById("reportcontainerID").className = "col60 floatright";
+            document.getElementById("mainID").className = "fullwidth";
+            document.getElementById("sideID").className = "fullwidth";
+            document.getElementById("tbl1ID").className = "col50";
+            document.getElementById("tbl2ID").className = "col50";
+        }
+        if ($(window).width() < 752) {
+            document.getElementById("logocontainerID").style.display = "none";
+            document.getElementById("symbolcontainerID").className = "col40 floatright tocenter fullheight"
+            document.getElementById("reportcontainerID").className = "col60 floatright";
+            document.getElementById("mainID").className = "fullwidth";
+            document.getElementById("sideID").className = "fullwidth";
+            document.getElementById("tbl1ID").className = "col50";
+            document.getElementById("tbl2ID").className = "col50";
+        }
+        if ($(window).width() < 524) {
+            document.getElementById("symbolcontainerID").className = "fullwidth tocenter";
+            document.getElementById("reportcontainerID").className = "fullwidth";
+            document.getElementById("mainID").className = "fullwidth";
+            document.getElementById("sideID").className = "fullwidth";
+            document.getElementById("tbl1ID").className = "fullwidth";
+            document.getElementById("tbl2ID").className = "fullwidth";
+        }
+    }
+
+    $(window).on('resize', function () {
+        resizing();
+    })
+    resizing();
 
 })
 ;

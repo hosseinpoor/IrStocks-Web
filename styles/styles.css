@@ -2,18 +2,20 @@
     --color-red: red;
     --color-green: green;
     --color-darkgray: #555;
-    --color-lightgray:#e0e0e0;
-    --color-lightblue:#2c7fc1;
-    --color-darkblue:#021f59;
-    --color-black:#000;
-    --color-yellow:yellow;
+    --color-lightgray: #e0e0e0;
+    --color-lightblue: #2c7fc1;
+    --color-darkblue: #021f59;
+    --color-black: #000;
+    --color-yellow: yellow;
+    --color-darklink: #20689a;
+    --color-lightlink: #6aacdc;
 }
 
 /*-----------------------------------TAGS-----------------------------------------------------------*/
 
-html{
+html {
     box-sizing: border-box;
-    padding: 0px;
+    padding: 0;
 }
 
 /*html {*/
@@ -33,50 +35,50 @@ html{
 /*z-index: +1;*/
 /*}*/
 
-div{
+div {
     font-family: bhoma;
 }
 
-p,span{
+p, span {
     font-family: bhoma;
     direction: rtl;
 }
 
-td,th{
+td, th {
     direction: rtl;
 }
 
-td{
+td {
     vertical-align: top;
 }
 
-th{
+th {
     max-width: 100px;
     vertical-align: bottom;
 }
 
-div[class^="col"]{
+div[class^="col"] {
     padding: 0;
 }
 
 /*-----------------------------------CLASSES-----------------------------------------------------------*/
 
-.pad{
+.pad {
     padding: 60px;
     text-align: left;
 }
 
-.top{
+.top {
     height: 350px;
 }
 
-.row{
+.row {
     text-align: center;
     vertical-align: middle;
     overflow: hidden;;
 }
 
-.data{
+.data {
     border-radius: 350px 0px 0px 350px;
     background-color: var(--color-lightgray);
     text-align: right;
@@ -89,7 +91,7 @@ div[class^="col"]{
     padding: 0px 60px 0px 30px;
 }
 
-.tabletitle{
+.tabletitle {
     color: var(--color-lightblue);
     font-weight: bold;
     font-size: 1.7em;
@@ -98,7 +100,7 @@ div[class^="col"]{
     height: 1em;
 }
 
-.tablekey{
+.tablekey {
     padding: 2px 0px 2px 10px;
     width: 47%;
     color: var(--color-black);
@@ -106,24 +108,24 @@ div[class^="col"]{
     font-size: 1.5em;
 }
 
-.tablevalue{
-    text-align:right ;
+.tablevalue {
+    text-align: right;
     padding: 2px 10px 2px 0px;
     width: 53%;
     color: var(--color-darkgray);
     font-size: 1.5em;
 }
 
-.tabletext{
-    text-align:center ;
+.tabletext {
+    text-align: center;
     padding: 2px 10px 2px 10px;
     color: var(--color-black);
     font-size: 1.25em;
     line-height: 1.7em;
 }
 
-.tabletextkey{
-    text-align:left ;
+.tabletextkey {
+    text-align: left;
     padding: 2px 10px 2px 10px;
     color: var(--color-black);
     font-size: 1.25em;
@@ -138,14 +140,14 @@ div[class^="col"]{
     padding: 0;
 }
 
-.linebreak{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.linebreak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5px;
     height: 5px;
 }
-    
+
 .dot {
     height: 10px;
     width: 10px;
@@ -153,17 +155,17 @@ div[class^="col"]{
     border-radius: 50%;
     float: left;
 }
-    
-.line{
+
+.line {
     position: relative;
     left: -5px;
-    width: 100% ;
+    width: 100%;
     height: 5px;
     background-color: var(--color-lightblue);
-    
+
 }
-    
-.label{
+
+.label {
     color: var(--color-lightblue);
     font-size: 2em;
     margin-left: 20px;
@@ -176,37 +178,38 @@ div[class^="col"]{
     border-radius: 50%;
     float: left;
 }
-    
-.darkline{
+
+.darkline {
     position: relative;
     left: -5px;
-    width: 100% ;
+    width: 100%;
     height: 5px;
     background-color: var(--color-darkblue);
 }
-    
-.darklabel{
+
+.darklabel {
     color: var(--color-darkblue);
     font-size: 2em;
     margin-left: 20px;
 }
-    
+
 .left {
     flex-grow: 1;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-.right {
-        float:right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.borderbottom{
+.right {
+    float: right;
+}
+
+.borderbottom {
     border-bottom-style: solid;
     border-bottom-color: var(--color-yellow);
 }
 
-.borderright{
+.borderright {
     border-right-style: solid;
     border-right-color: var(--color-yellow);
     vertical-align: middle;
@@ -214,7 +217,7 @@ div[class^="col"]{
     padding-left: 35px;
 }
 
-.borderleft{
+.borderleft {
     border-left-style: solid;
     border-left-color: var(--color-yellow);
     vertical-align: middle;
@@ -222,36 +225,131 @@ div[class^="col"]{
     padding-right: 35px;
 }
 
-.report{
+.report {
     width: 80%;
-    height:100%;
+    height: 100%;
     object-fit: contain;
     object-position: bottom;
 }
 
-.logo{
-    width: 65%;
-    height:100%;
-    object-fit: contain;
-    margin-top: 14px;
-    margin-left: 28px;
+.reportcontainer {
+    width: 80%;
+    padding: 30px 0px 0px 10%;
 }
 
-.chart{
-    padding-left: 75px;
-    width: 100%;
-    height: 570px;
+.logocontainer {
+    vertical-align: bottom;
+}
+
+.reportchart {
+    width: calc(100% - 40px);
+    margin-top: 20px;
+    height: 10%;
+    border-radius: 100px;
+    background-image: linear-gradient(to right, red, yellow, green);
+    padding: 10px 20px 0px 20px;
+    position: relative;
+}
+
+.reportchart > div:not(:first-child) {
+    border-left-style: solid;
+    border-left-color: #fff;
+    border-left-width: 2px;
+    vertical-align: middle;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.pointer {
+    width: 30px;
+    height: 80px;
+    object-fit: contain;
+    object-position: bottom;
+    position: absolute;
+    left: 10%;
+    bottom: 33%
+}
+
+.darkpointer {
+    width: 30px;
+    height: 80px;
+    object-fit: contain;
+    object-position: bottom;
+    position: absolute;
+    left: 80%;
+    bottom: 33%
+}
+
+.sell {
+    text-align: left;
+    float: left;
+    width: calc(50% - 20px);
+    color: var(--color-red);
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+
+.buy {
+    text-align: right;
+    float: left;
+    width: calc(50% - 20px);
+    color: var(--color-green);
+    margin-right: 20px;
+    font-size: 1.5em;
+}
+
+.fundamental {
+    text-align: left;
+    float: left;
+    width: 45%;
+    color: var(--color-lightblue);
+    margin-left: 5%;
+    font-size: 1.5em;
+}
+
+.technical {
+    text-align: right;
+    float: left;
+    width: 45%;
+    color: var(--color-darkblue);
+    margin-right: 5%;
+    font-size: 1.5em;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.logo {
+    width: 65%;
+    object-fit: contain;
+    margin-top: 14px;
+}
+
+.linkcontainer {
+    height: 40px;
+}
+
+.linklogo {
+    height: 100%;
+}
+
+.chart {
+    padding-left: 50px;
+    width: calc(100% - 50px);
+    min-height: 570px;
     display: inline-block;
     position: relative;
 }
 
-.title{
+.title {
     margin: 0;
     font-size: 4.5em;
-    margin-top: 24px;
 }
 
-.subtitle{
+.subtitle {
     margin: 0;
     font-size: 2em;
 }
@@ -259,6 +357,13 @@ div[class^="col"]{
 .bottomlogo {
     width: 33%;
     margin-left: 33px;
+}
+
+.col20 {
+    text-align: center;
+    float: left;
+    width: calc(20% - 6px);
+    height: 100%;
 }
 
 .col33 {
@@ -289,6 +394,7 @@ div[class^="col"]{
     text-align: center;
     float: left;
     width: 40%;
+    height: 100%;
 }
 
 .col60 {
@@ -301,6 +407,7 @@ div[class^="col"]{
     text-align: center;
     float: left;
     width: 30%;
+    height: 100%;
 }
 
 .col63 {
@@ -315,38 +422,46 @@ div[class^="col"]{
     width: 37%;
 }
 
-.fullheight{
+.floatright {
+    float: right;
+}
+
+.fullheight {
     height: 100%;
 }
 
-.fullwidth{
+.fullwidth {
     width: 100%;
 }
 
-.horizcenter{
+.horizcenter {
     margin-left: auto;
     margin-right: auto;
 }
 
-.tobottom{
-    margin-top: auto;
-    text-align: center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.tobottom {
+    height: 100%;
+    vertical-align: bottom;
+    /*display: flex;                   !* defines flexbox *!*/
+    /*flex-direction: column;*/
+    /*align-items: flex-end;*/
 }
 
-.tocenter{
+.tocenter {
     margin: auto;
     text-align: center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.toleft{
+.toleft {
     margin-left: 20px;
     margin-right: auto;
+    text-align: left;
+}
+
+.allignleft {
     text-align: left;
 }
 
@@ -354,58 +469,215 @@ div[class^="col"]{
     text-align: right;
 }
 
-.toright{
+.toright {
     margin-right: 20px;
     margin-left: auto;
     text-align: right;
 }
 
-.rlmargins{
-        margin-left: 5px;
-        margin-right: 5px;
+.rlmargins {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .margintop {
     margin-top: 25px;
 }
 
+.margintopmini {
+    margin-top: 0;
+}
+
+.txtwhite {
+    color: #fff;
+}
+
 .txtblack {
     color: var(--color-black);
 }
 
-.txtblue{
+.txtblue {
     color: var(--color-lightblue);
 }
 
-.txtred{
+.txtred {
     color: var(--color-red);
 }
 
-.txtgreen{
+.linkdark {
+    color: var(--color-darklink);
+    font-size: 2em;
+    text-decoration: none;
+    font-family: calibri;
+}
+
+.linklight {
+    color: var(--color-lightlink);
+    font-size: 2em;
+    text-decoration: none;
+    font-family: calibri;
+}
+
+.txtgreen {
     color: var(--color-green);
 }
 
-.txtgray{
-    color:var(--color-darkgray);
+.txtgray {
+    color: var(--color-darkgray);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
+}
 
+@media screen and (max-width: 1600px) {
+    .data {
+        border-radius: 50px 0px 0px 50px;
+    }
+
+    .tabletitlebig {
+        font-size: 1.5em;
+    }
+
+    .borderright {
+        padding-left: 20px;
+    }
+
+    .borderleft {
+        padding-right: 20px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
+    .top {
+        height: 230px;
+    }
 
+    .title {
+        font-size: 2.5em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+
+    .fundamental {
+        font-size: 1.2em;
+    }
+
+    .technical {
+        font-size: 1.2em;
+    }
+
+    .linklight {
+        font-size: 1.5em;
+    }
+
+    .linkdark {
+        font-size: 1.5em;
+    }
+
+    .linklogo {
+        height: 70%;
+    }
+
+    .tabletext {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    .tabletextkey {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    .tablekey {
+        font-size: 1em;
+    }
+
+    .tablevalue {
+        font-size: 1em;
+    }
+
+    .margintop {
+        margin-top: 10px;
+    }
+
+    .margintopmini {
+        margin-top: 10px;
+    }
+
+    .tblcontainer {
+        padding: 0 20px 0 10px;
+    }
+
+    .pad {
+        padding: 10px;
+    }
+
+    .chart {
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    .borderright {
+        padding-left: 0px;
+    }
+
+    .borderleft {
+        padding-right: 0px;
+    }
 }
 
 @media screen and (max-width: 992px) {
+    .data {
+        border-radius: 0;
+    }
 
 }
 
 @media screen and (max-width: 768px) {
+    .tabletitlebig {
+        font-size: 1em;
+    }
+}
 
+@media (max-width: 540px) {
+    .top {
+        height: 250px;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .tabletitle {
+        margin-right: 0;
+    }
+
+    .tblcontainer {
+        padding: 0;
+        overflow-x: auto;
+    }
+
+    .label {
+        font-size: 1.25em;
+        margin: 0;
+        padding: 0;
+    }
+
+    .darklabel {
+        font-size: 1.25em;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 @font-face {
     font-family: bhoma;
     src: url(../fonts/bhoma.ttf);
+}
+
+@font-face {
+    font-family: calibri;
+    src: url(../fonts/calibri.ttf);
 }
